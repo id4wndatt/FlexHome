@@ -1,0 +1,389 @@
+/* Setting Reponsive */
+@media (min-width: 768px) and (max-aspect-ratio: 1920/1050) {
+  html {
+    font-size: 0.05208333333vw;
+  }
+}
+
+@media (min-width: 768px) and (min-aspect-ratio: 1920/1050) {
+  html {
+    font-size: 0.09520809524vh;
+  }
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 3/4) {
+  html {
+    font-size: 0.13020833333vw;
+  }
+}
+
+@media (max-width: 768px) and (min-aspect-ratio: 3/4) {
+  html {
+    font-size: 0.09765625vh;
+  }
+}
+
+@media (max-width: 480px) and (max-aspect-ratio: 9/20) {
+  html {
+    font-size: 0.09375vw;
+  }
+}
+
+@media (max-width: 480px) and (min-aspect-ratio: 9/20) {
+  html {
+    font-size: 0.2083333333vh;
+  }
+}
+
+/* Common */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fs-16 {
+  font-size: 16rem;
+}
+
+.mt-12 {
+  margin-top: 12rem;
+}
+
+.mt-18 {
+  margin-top: 18rem;
+}
+
+.mt-36 {
+  margin-top: 36rem;
+}
+
+.mt-48 {
+  margin-top: 48rem;
+}
+
+.mr-24 {
+  margin-right: 24rem;
+}
+
+.mr-36 {
+  margin-right: 36rem;
+}
+
+.pr-36 {
+  padding-right: 32rem;
+}
+
+.hidden-mb {
+  display: none;
+}
+
+.img-tower {
+  width: 334rem;
+  height: 588rem;
+}
+
+.compass {
+  width: 96rem;
+  height: 96rem;
+}
+
+.arrow-shortened {
+  width: 36rem;
+  height: 144rem;
+  margin-top: 204rem;
+  margin-right: 240rem;
+  background: unset;
+}
+
+.apt-img {
+  width: 162rem;
+  height: 162rem;
+}
+
+.icon-contact {
+  width: 18rem;
+  height: 18rem;
+}
+
+.floor {
+  width: 48rem;
+  height: 48rem;
+  border-radius: 50%;
+  background: unset;
+}
+
+.block-apt {
+  width: 384rem;
+  height: 210rem;
+  padding: 24rem;
+  border: 0.2rem solid #ffffff;
+  align-items: center;
+}
+
+.flex-ct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w32-h12 {
+  width: 32rem;
+  height: 12rem;
+}
+
+.bt-w32-h12 {
+  width: 32rem;
+  height: 12rem;
+  background: unset;
+  border: none;
+}
+
+.w83-h18 {
+  width: 83rem;
+  height: 18rem;
+}
+
+.bd-rd-8 {
+  border-radius: 8rem;
+}
+
+/* Main CSS */
+.container {
+  width: 1920rem;
+  height: 1050rem;
+  display: grid;
+  grid-template-columns: 670rem 1250rem;
+}
+
+/* main-content */
+.content {
+  padding-top: 60rem;
+  padding-left: 48rem;
+  border-top: 0.2rem solid #000000;
+  border-left: 0.2rem solid #000000;
+  border-bottom: 0.2rem solid #000000;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 36rem;
+}
+
+/* main-tower-wrapper */
+.tower-wrapper {
+  width: 574rem;
+  height: 60rem;
+  display: flex;
+  padding: 12rem 0;
+  border-top: 1rem solid #3b3b3b;
+  border-bottom: 1rem solid #3b3b3b;
+}
+
+.icon-tower {
+  width: 36rem;
+  height: 36rem;
+}
+
+.tower-wrapper p:nth-child(2),
+.tower-wrapper p:nth-child(3) {
+  padding: 9rem 36rem 9rem 0;
+  border-right: 1rem solid #3b3b3b;
+}
+
+.tower-wrapper p:nth-child(4) {
+  display: flex;
+  align-items: center;
+}
+
+/* main-floor-wrapper */
+.floor-wrapper {
+  width: 574rem;
+  align-items: center;
+}
+
+.floor-selection {
+  width: 192rem;
+  height: 578rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floor-list {
+  width: 192rem;
+  padding: 18rem 0;
+  border-top: 1rem solid #3b3b3b;
+  border-bottom: 1rem solid #3b3b3b;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24rem;
+}
+
+.floor-select-title {
+  position: absolute;
+  top: -11rem;
+  left: 44rem;
+  padding: 0 12rem;
+  background-color: #ffffff;
+}
+
+/* main-footer */
+.footer-wrapper {
+  width: 574rem;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 168rem;
+  height: 48rem;
+}
+
+.contact-info div:last-child {
+  width: 97rem;
+  height: 18rem;
+}
+
+/* apartment-container */
+.apartment-container {
+  padding-top: 72rem;
+  background: url("/imgs/apt-img.png");
+  overflow: hidden;
+  background-size: cover;
+}
+
+.floor-info {
+  display: flex;
+}
+
+.arrow-shortened img:first-child {
+  width: 36rem;
+  height: 144rem;
+}
+
+.img-apt-info {
+  width: 698rem;
+  height: 624rem;
+}
+
+.apt-wrapper {
+  display: flex;
+  padding: 24rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  gap: 24rem;
+}
+
+.apt-wrapper .block-apt:last-child {
+  width: 2rem;
+  padding: 0;
+}
+
+.apt-img p:first-child {
+  font-size: 24rem;
+}
+
+.apt-info {
+  color: #ffffff;
+  text-align: right;
+}
+
+.apt-info p:first-child {
+  font-size: 24rem;
+}
+
+/* mobile-css */
+@media only screen and (max-width: 480px) {
+  /* Commmon */
+  .fs-12 {
+    font-size: 12rem;
+  }
+
+  .mt-mb-24 {
+    margin-top: 24rem;
+  }
+
+  .mr-mb-24 {
+    margin-right: 24rem;
+  }
+
+  .mt-mb-18 {
+    margin-top: 18rem;
+  }
+
+  .mt-mb-12 {
+    margin-top: 12rem;
+  }
+
+  .floor {
+    width: 36rem;
+    height: 36rem;
+  }
+
+  .img-tower {
+    width: 348rem;
+    height: 612rem;
+  }
+
+  .arrow-mb {
+    width: 36rem;
+    height: 12rem;
+  }
+
+  .hidden-mb {
+    display: flex;
+  }
+
+  .container {
+    width: 480rem;
+    height: 1066.66rem;
+    grid-template-columns: 384rem 96rem;
+  }
+
+  .content {
+    padding-left: 18rem;
+  }
+
+  .tower-wrapper {
+    width: 348rem;
+  }
+
+  .floor-wrapper {
+    flex-direction: column;
+    width: 348rem;
+  }
+
+  .floor-list {
+    gap: 30rem;
+  }
+
+  .floor-select-title {
+    left: 108rem;
+  }
+
+  .footer-wrapper {
+    width: 294rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .apt-wrapper {
+    padding: 32.33rem 24rem;
+    height: 274.66rem;
+  }
+}
