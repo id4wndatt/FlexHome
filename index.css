@@ -25,13 +25,13 @@
 
 @media (max-width: 480px) and (max-aspect-ratio: 9/20) {
   html {
-    font-size: 0.09375vw;
+    font-size: 0.2083333333vw;
   }
 }
 
 @media (max-width: 480px) and (min-aspect-ratio: 9/20) {
   html {
-    font-size: 0.2083333333vh;
+    font-size: 0.09375vh;
   }
 }
 
@@ -51,6 +51,9 @@ a {
 body {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fs-16 {
@@ -79,13 +82,9 @@ body {
 
 .mr-36 {
   margin-right: 36rem;
-}
+} 
 
-.pr-36 {
-  padding-right: 32rem;
-}
-
-.hidden-mb {
+.hidden {
   display: none;
 }
 
@@ -105,6 +104,7 @@ body {
   margin-top: 204rem;
   margin-right: 240rem;
   background: unset;
+  border: none;
 }
 
 .apt-img {
@@ -122,6 +122,14 @@ body {
   height: 48rem;
   border-radius: 50%;
   background: unset;
+  display: flex;
+  justify-content: center;
+}
+
+.floor-name {
+  display: flex;
+  align-items: center;
+  color: #3B3B3B;
 }
 
 .block-apt {
@@ -129,42 +137,37 @@ body {
   height: 210rem;
   padding: 24rem;
   border: 0.2rem solid #ffffff;
-  align-items: center;
-}
-
-.flex-ct {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-sb {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.w32-h12 {
-  width: 32rem;
+.w36-h12 {
+  width: 36rem;
   height: 12rem;
 }
 
-.bt-w32-h12 {
-  width: 32rem;
+.bt-w36-h12 {
+  width: 36rem;
   height: 12rem;
   background: unset;
   border: none;
+  display: flex;
+  justify-content: center;
 }
 
 .w83-h18 {
   width: 83rem;
   height: 18rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.bd-rd-8 {
+.br-8 {
   border-radius: 8rem;
 }
 
-/* Main CSS */
+/* main-css */
 .container {
   width: 1920rem;
   height: 1050rem;
@@ -172,7 +175,6 @@ body {
   grid-template-columns: 670rem 1250rem;
 }
 
-/* main-content */
 .content {
   padding-top: 60rem;
   padding-left: 48rem;
@@ -186,7 +188,6 @@ body {
   font-size: 36rem;
 }
 
-/* main-tower-wrapper */
 .tower-wrapper {
   width: 574rem;
   height: 60rem;
@@ -203,7 +204,9 @@ body {
 
 .tower-wrapper p:nth-child(2),
 .tower-wrapper p:nth-child(3) {
-  padding: 9rem 36rem 9rem 0;
+  display: flex;
+  align-items: center;
+  padding-right: 36rem;
   border-right: 1rem solid #3b3b3b;
 }
 
@@ -212,9 +215,10 @@ body {
   align-items: center;
 }
 
-/* main-floor-wrapper */
 .floor-wrapper {
   width: 574rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -222,6 +226,8 @@ body {
   width: 192rem;
   height: 578rem;
   flex-direction: column;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -244,9 +250,10 @@ body {
   background-color: #ffffff;
 }
 
-/* main-footer */
 .footer-wrapper {
   width: 574rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -255,12 +262,20 @@ body {
   height: 48rem;
 }
 
+.contact-info {
+  width: 313rem;
+  height: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact-info div:last-child {
   width: 97rem;
   height: 18rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* apartment-container */
 .apartment-container {
   padding-top: 72rem;
   background: url("/imgs/apt-img.png");
@@ -294,10 +309,6 @@ body {
   padding: 0;
 }
 
-.apt-img p:first-child {
-  font-size: 24rem;
-}
-
 .apt-info {
   color: #ffffff;
   text-align: right;
@@ -305,6 +316,37 @@ body {
 
 .apt-info p:first-child {
   font-size: 24rem;
+}
+
+/* tablet-reponsive */
+@media only screen and (max-width: 768px) {
+  /* Common */
+  .mt-tb-36 {
+    margin-top: 36rem;
+  }
+
+  .mt-tb-24 {
+    margin-top: 24rem;
+  }
+
+  /* main-css */
+  .container {
+    width: 768rem;
+    height: 1024rem;
+    grid-template-columns: 670rem 98rem;
+  }
+
+  .content {
+    padding-top: 48rem;
+  }
+
+  .arrow-shortened {
+    margin-right: 24rem;
+  }
+
+  .apt-wrapper {
+    padding: 11rem 24rem  ;
+  }
 }
 
 /* mobile-css */
@@ -324,6 +366,10 @@ body {
 
   .mt-mb-18 {
     margin-top: 18rem;
+  }
+
+  .mr-mb-18 {
+    margin-right: 18rem;
   }
 
   .mt-mb-12 {
@@ -346,9 +392,29 @@ body {
   }
 
   .hidden-mb {
-    display: flex;
+    display: none;
   }
 
+  .mb-w70-h18 {
+    width: 70rem;
+    height: 18rem;
+  } 
+
+  .w12-h36 {
+    width: 12rem;
+    height: 36rem;
+  }
+
+  .bt-w12-h36 {
+    width: 12rem;
+    height: 36rem;
+    background: unset;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* main-css */
   .container {
     width: 480rem;
     height: 1066.66rem;
@@ -359,17 +425,47 @@ body {
     padding-left: 18rem;
   }
 
+  .title {
+    font-size: 24rem;
+  }
+
+  .tower-wrapper p:nth-child(2),
+  .tower-wrapper p:nth-child(3) {
+    padding-right: 24rem;
+  }
+
   .tower-wrapper {
     width: 348rem;
+    height: 48rem;
+  }
+
+  .icon-tower {
+    width: 24rem;
+    height: 24rem;
   }
 
   .floor-wrapper {
     flex-direction: column;
     width: 348rem;
+    height: 698rem;
+  }
+
+  .floor-selection {
+    width: 348rem;
+    height: 60rem;
+    flex-direction: row;
+  }
+
+  .img-tower {
+    width: 348rem;
+    height: 612rem;
   }
 
   .floor-list {
+    width: 300rem;
     gap: 30rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .floor-select-title {
@@ -379,7 +475,23 @@ body {
   .footer-wrapper {
     width: 294rem;
     flex-direction: column;
-    justify-content: center;
+    gap: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-logo {
+    width: 120rem;
+    height: 36rem;
+  }
+
+  .contact-info {
+    width: 294rem;
+    height: 18rem;
+  }
+
+  .arrow-shortened {
+    margin-right: 24rem;
   }
 
   .apt-wrapper {
