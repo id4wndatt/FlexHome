@@ -124,9 +124,7 @@ body {
   background: unset;
   display: flex;
   justify-content: center;
-}
-
-.floor-name {
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #3B3B3B;
@@ -140,6 +138,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .w36-h12 {
@@ -208,6 +207,12 @@ body {
   align-items: center;
   padding-right: 36rem;
   border-right: 1rem solid #3b3b3b;
+  cursor: pointer;
+}
+
+.tower-wrapper p:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
 }
 
 .tower-wrapper p:nth-child(4) {
@@ -242,12 +247,18 @@ body {
   gap: 24rem;
 }
 
+.floor:hover {
+  background-color: #3B3B3B;
+  color: #ffffff;
+}
+
 .floor-select-title {
   position: absolute;
   top: -11rem;
   left: 44rem;
   padding: 0 12rem;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-wrapper {
@@ -307,6 +318,10 @@ body {
 .apt-wrapper .block-apt:last-child {
   width: 2rem;
   padding: 0;
+}
+
+.block-apt:hover {
+  background: rgba(255, 255, 255, 0.2)
 }
 
 .apt-info {
